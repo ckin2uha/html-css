@@ -1,0 +1,72 @@
+*{
+    margin: 5px;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+li{
+    list-style: none;
+}
+li > a{
+    margin: 15px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1vh;
+    text-transform: uppercase;
+}
+
+.menu a{
+    margin:15px;
+    color: #2f353b;
+    font-size: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.menu a:hover{
+    text-decoration: line-through;
+    transition: 0.9s;
+}
+
+.catalog{
+    text-align: center;
+}
+.catalog p{
+    color: gray;
+    text-decoration: darkslategray;
+    font-size: 1em;
+    font-variant: all-small-caps;
+}
+.copy{
+    text-align: center;
+}
+ymaps{
+    background-color: #00000000;
+}
+
+input{
+    border:1px solid black;
+    width: 300px;
+    height: 25px;
+    text-align: center;
+    border-radius: 2rem;
+}
+input:focus{
+    outline-color: #00000000;
+}
+.chekBox{
+    width: 3vh;
+    cursor: pointer;
+}
+button{
+    width: 145px;
+    height: 25px;
+    border-radius: 2rem;
+    font-variant: all-small-caps;
+    border: 1px solid black;
+    cursor: pointer;
+}
+button:focus{
+    outline-color: #00000000;
+}

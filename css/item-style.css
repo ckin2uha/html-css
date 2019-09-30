@@ -1,0 +1,27 @@
+.item >{
+    color:black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.shortDesc{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.longDesc{
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.descTab{
+    margin-top: 1rem;
+}
+.descTab > li{
+    list-style-position: inside;
+    list-style-image: url(http://best.moy-forum.net/pics/professionals/inzh.gif);
+}
