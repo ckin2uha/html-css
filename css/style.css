@@ -1,6 +1,4 @@
 *{
-    margin: 5px;
-    padding: 0;
     background-color: #f8f8f8;
 }
 
@@ -10,9 +8,19 @@ li{
 li > a{
     margin: 15px;
 }
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header img{
+    width: 10%;
+}
+
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 1vh;
     text-transform: uppercase;
 }
@@ -26,7 +34,8 @@ li > a{
 }
 .menu a:hover{
     text-decoration: line-through;
-    transition: 0.9s;
+    transition: 0.6s;
+    color:gray;
 }
 
 .catalog{
@@ -41,6 +50,7 @@ li > a{
 .copy{
     text-align: center;
 }
+
 ymaps{
     background-color: #00000000;
 }
@@ -51,10 +61,12 @@ input{
     height: 25px;
     text-align: center;
     border-radius: 2rem;
+    text-transform: capitalize;
 }
 input:focus{
     outline-color: #00000000;
 }
+
 .chekBox{
     width: 3vh;
     cursor: pointer;
@@ -69,4 +81,32 @@ button{
 }
 button:focus{
     outline-color: #00000000;
+}
+input[type="email"]:focus {
+    color:whitesmoke;
+    background: #2f353b;
+}
+content h1, h4{
+    text-align: center;
+}
+.catalogTable{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+.catalogTable td{
+    vertical-align: middle;
+    text-align: center;
+    border: 1px solid #000;
+    text-transform: capitalize;
+}
+.catalogImg{
+    outline: 2px solid brown;
+    width: 35%;
+}
+.catalogImg:hover{ 
+    outline: none;
+}
+.catalogTable tr:first-child{
+    height: 50px !important;
 }
