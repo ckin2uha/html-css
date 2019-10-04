@@ -1,5 +1,7 @@
-*{
-    background-color: #f8f8f8;
+html{
+    margin: auto;
+    padding: 0;    
+    max-width: 1024px;
 }
 
 li{
@@ -12,6 +14,9 @@ li > a{
 header{
     display: flex;
     justify-content: space-evenly;
+    background-image: url(https://images.wallpaperscraft.com/image/spots_background_paint_light_69122_1680x1050.jpg);
+    background-position: top;
+    height: 80px;
 }
 
 header img{
@@ -35,23 +40,20 @@ header img{
 .menu a:hover{
     text-decoration: line-through;
     transition: 0.6s;
-    color:gray;
+    color:rgb(255, 255, 255);
 }
 
-.catalog{
-    text-align: center;
-}
+
 .catalog p{
     color: gray;
     text-decoration: darkslategray;
     font-size: 1em;
     font-variant: all-small-caps;
 }
-.copy{
-    text-align: center;
-}
+
 
 ymaps{
+    position: relative;
     background-color: #00000000;
 }
 
@@ -73,7 +75,7 @@ input:focus{
 }
 button{
     width: 145px;
-    height: 25px;
+    height: 30px;
     border-radius: 2rem;
     font-variant: all-small-caps;
     border: 1px solid black;
@@ -101,12 +103,120 @@ content h1, h4{
     text-transform: capitalize;
 }
 .catalogImg{
-    outline: 2px solid brown;
-    width: 35%;
+    outline: 1px solid rgb(97, 97, 97);
+    margin-right: 25px;
 }
 .catalogImg:hover{ 
     outline: none;
 }
 .catalogTable tr:first-child{
     height: 50px !important;
+}
+footer{
+    height: 150px;
+    background-image: url(https://images.wallpaperscraft.com/image/spots_background_paint_light_69122_1680x1050.jpg);
+    background-position: top;
+    text-align: right;
+    clear: both;
+    border-top: 1px solid brown;
+}
+.copy{
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.catalog-item{
+    float: left;
+}
+.items{
+    float: left;
+    text-align: center;
+    outline: 1px solid black;
+    outline-style: auto;
+    width: 50%;
+    height: 290px;
+}
+.items a{
+    color:black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.items img{
+    width: 99.9%;
+}
+.catalog-item .items:nth-child(1n):hover{
+    background-color: #a2a3a3;
+    transform-style: flat;
+    transform: skewY(-5deg);
+    transition: 0.5s;
+}
+.catalog-item .items:nth-child(2n):hover{
+    background-color: #292f35;
+    transform-style: flat;
+    transform: skewY(5deg);
+    transition: 0.5s;
+}
+.catalog-item input[type="button"]{
+    display: block;
+    margin: auto;
+    background-color: rgba(0, 255, 0, 0.322) !important;
+}
+.catalog-item input[type="button"]:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 255, 0) !important;
+}
+
+.contact-form{
+    margin: 0 2em;
+    padding: 0.5vh;
+    display: inline-block;
+    border: 1px groove rgb(13, 5, 29);
+    border-radius: 10px;
+    padding-bottom: 1rem;
+}
+.cont{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contact-form > h3{
+    margin-top: -28px;
+    margin-left: 25px;
+    background-color: aliceblue;
+    width: fit-content;
+    padding-bottom: 15px;
+}
+.check{
+    margin-inline-start: 2rem;
+    margin-top: 15px;
+    margin-bottom: -20px;
+    float: left;
+}
+.contact-form > button[type="submit"]{
+    margin-top: 60px;
+    background-color: rgba(41, 206, 41, 0.534);
+}
+.contact-form > button[type="reset"]{
+    margin-top: 60px;
+    background-color: rgba(206, 41, 63, 0.534);
+}
+.contact-form > button[type="submit"]:hover{
+    background-color: rgba(41, 206, 41);
+}
+.contact-form > button[type="reset"]:hover{
+    background-color: rgba(206, 41, 63);
+}
+
+.one-conteiner{
+    display: flex;
+}
+.container-text{
+    position: relative;
+}
+.container-text input[type="button"]{
+    position: absolute;
+    margin-top: 35%;
+    margin-left: 55px;
+    background-color: rgba(41, 206, 41, 0.534);
+}
+.container-text input[type="button"]:hover{
+    background-color: rgba(41, 206, 41);
 }
